@@ -1,12 +1,8 @@
 import React from 'react';
-import DrawMain from 'Drawmain';
+import DrawMain from './Screens/DrawMain';
 
 function App() {
-  return (
-    <div>
-      <DrawMain />
-    </div>
-  );
+  return <DrawMain />;
 }
 
 export default App;
