@@ -26,6 +26,9 @@ const Item = styled.div`
   height: 4rem;
   border-radius: 10px;
   cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
   &:hover {
     ${Remove} {
       display: initial;
@@ -33,9 +36,10 @@ const Item = styled.div`
   }
 `;
 
-function BoxItem() {
+function BoxItem({ children }) {
   return (
     <Item>
+      {children}
       <Remove>
         <MdDelete />
       </Remove>

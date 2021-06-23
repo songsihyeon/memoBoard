@@ -9,17 +9,17 @@ const BoxHeader = styled.div`
   color: #495057;
 `;
 
-const TakeNotes = styled.div`
-  font-size: 14px;
-  font-weight: bold;
-  padding-top: 20px;
-`;
+// const TakeNotes = styled.div`
+//   font-size: 14px;
+//   font-weight: bold;
+//   padding-top: 20px;
+// `;
 
 function Header() {
   return (
     <BoxHeader>
-      Notes App
-      <TakeNotes>Take notes and never forget</TakeNotes>
+      Diary App
+      {/* <TakeNotes>Take notes and never forget</TakeNotes> */}
     </BoxHeader>
   );
 }

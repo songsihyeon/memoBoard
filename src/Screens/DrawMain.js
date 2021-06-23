@@ -26,10 +26,10 @@ function DrawMain() {
     <>
       <ContentBox>
         <Header />
-        <SearchBox placeholder="search here !!" />
+        <SearchBox placeholder="제목으로 검색해요 🔍" />
         <BoxItemList />
         <Footer>
-          <Button Text="생성" Path="/write" />
+          <Button Text="생성" Pathes="/write" />
         </Footer>
       </ContentBox>
     </>

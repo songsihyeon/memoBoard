@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Route, Link } from 'react-router-dom';
-import WriteMemo from '../Screens/WriteMemo';
+import { Link } from 'react-router-dom';
 
 const ButtonStyle = styled.button`
   height: 2rem;
@@ -23,13 +22,12 @@ const ButtonStyle = styled.button`
   margin-top: 1.5rem;
 `;
 
-function Button({ Text, Path }) {
+function Button({ Text, Pathes }) {
   return (
     <>
-      <Link to={Path}>
+      <Link to={Pathes}>
         <ButtonStyle>{Text}</ButtonStyle>
       </Link>
-      <Route path="/write" component={WriteMemo} />
     </>
   );
 }

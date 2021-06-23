@@ -22,12 +22,14 @@ const ScrollSection = styled.div`
 function BoxItemList() {
   return (
     <ScrollSection>
-      <BoxItem />
-      <BoxItem />
-      <BoxItem />
-      <BoxItem />
-      <BoxItem />
-      <BoxItem />
+      <BoxItem>1</BoxItem>
+      <BoxItem>2</BoxItem>
+      <BoxItem>3</BoxItem>
+      <BoxItem>4</BoxItem>
+      <BoxItem>5</BoxItem>
+      <BoxItem>6</BoxItem>
+      <BoxItem>7</BoxItem>
+      <BoxItem>8</BoxItem>
     </ScrollSection>
   );
 }
