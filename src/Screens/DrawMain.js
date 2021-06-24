@@ -12,25 +12,28 @@ const SearchBox = styled.input`
   outline: none;
   border: none;
   text-align: center;
-  font-size: 14px;
-  margin-top: 20px;
-  margin-left: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Gaegu';
+  margin-top: 0px;
+  margin-left: 200px;
   border-radius: 25px;
-  background: white;
+  border: 1px solid #e67700;
+  background: #fff4e6;
   color: #e67700;
-  border: 2px solid #e67700;
 `;
 
 function DrawMain() {
   return (
     <>
       <ContentBox>
-        <Header />
-        <SearchBox placeholder="제목으로 검색해요 🔍" />
+        <Header>
+          <SearchBox placeholder="🔍 날짜를 검색하세요. ex) 6월 19일" />
+        </Header>
         <BoxItemList />
-        <Footer>
+        {/* <Footer>
           <Button Text="생성" Pathes="/write" />
-        </Footer>
+        </Footer> */}
       </ContentBox>
     </>
   );

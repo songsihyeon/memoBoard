@@ -4,7 +4,7 @@ import BoxItem from './BoxItem';
 
 const ScrollSection = styled.div`
   overflow: scroll;
-  width: 31rem;
+  width: 1000px;
   height: 15rem;
   margin-left: 53px;
   margin-top: 20px;

@@ -1,50 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdDelete } from 'react-icons/md';
-
-const Remove = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #bac8ff;
-  font-size: 24px;
-  cursor: pointer;
-  &:hover {
-    color: #ff6b6b;
-  }
-  display: none;
-`;
 
 const Item = styled.div`
   margin-bottom: 10px;
+  padding-right: 20px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 20px;
-  background: #ffec99;
+  justify-content: center;
+  background: #fff4e6;
   width: 29.25rem;
   height: 4rem;
+  border: 1px solid #e67700;
   border-radius: 10px;
   cursor: pointer;
-  color: white;
+  color: #e67700;
   font-weight: bold;
   font-size: 18px;
-  &:hover {
-    ${Remove} {
-      display: initial;
-    }
-  }
+  font-family: 'Gaegu';
 `;
 
 function BoxItem({ children }) {
-  return (
-    <Item>
-      {children}
-      <Remove>
-        <MdDelete />
-      </Remove>
-    </Item>
-  );
+  return <Item>{children}</Item>;
 }
 
 export default BoxItem;
