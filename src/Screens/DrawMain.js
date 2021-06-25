@@ -18,9 +18,9 @@ const SearchBox = styled.input`
   margin-top: 0px;
   margin-left: 200px;
   border-radius: 25px;
-  border: 1px solid #e67700;
-  background: #fff4e6;
-  color: #e67700;
+  border: 1px solid #495057;
+  background: #e9ecef;
+  color: #495057;
 `;
 
 function DrawMain() {
@@ -31,9 +31,9 @@ function DrawMain() {
           <SearchBox placeholder="🔍 날짜를 검색하세요. ex) 6월 19일" />
         </Header>
         <BoxItemList />
-        {/* <Footer>
+        <Footer>
           <Button Text="생성" Pathes="/write" />
-        </Footer> */}
+        </Footer>
       </ContentBox>
     </>
   );

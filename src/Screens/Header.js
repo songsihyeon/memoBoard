@@ -9,14 +9,14 @@ const BoxHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #e67700;
+  border-bottom: 1px solid #495057;
 `;
 
 const Title = styled.div`
   font-size: 88px;
   font-weight: bold;
   font-family: 'Gaegu';
-  color: #e67700;
+  color: #495057;
   margin-top: 30px;
   margin-left: 700px;
   display: inline;
@@ -26,7 +26,7 @@ const SubTitle = styled.div`
   font-size: 32px;
   font-weight: bold;
   font-family: 'Gaegu';
-  color: #e67700;
+  color: #495057;
   padding-left: 10px;
   margin-top: 60px;
   display: inline;

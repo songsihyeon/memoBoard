@@ -4,17 +4,14 @@ import BoxItem from './BoxItem';
 
 const ScrollSection = styled.div`
   overflow: scroll;
-  width: 1000px;
-  height: 15rem;
-  margin-left: 53px;
-  margin-top: 20px;
+  background: #dee2e6;
+  width: 1850px;
+  height: 700px;
+  margin-left: 100px;
+  margin-top: 70px;
+  border-radius: 10px;
+  border: 1px solid #495057;
   &::-webkit-scrollbar {
-    /* 세로 스크롤 넓이 */
-    // width: 8px;
-    /* 가로 스크롤 높이 */
-    /* height: 8px;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.4); */
     display: none;
   }
 `;
@@ -30,6 +27,12 @@ function BoxItemList() {
       <BoxItem>6</BoxItem>
       <BoxItem>7</BoxItem>
       <BoxItem>8</BoxItem>
+      <BoxItem>9</BoxItem>
+      <BoxItem>10</BoxItem>
+      <BoxItem>11</BoxItem>
+      <BoxItem>12</BoxItem>
+      <BoxItem>13</BoxItem>
+      <BoxItem>14</BoxItem>
     </ScrollSection>
   );
 }

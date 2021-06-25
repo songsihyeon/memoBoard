@@ -3,23 +3,24 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const ButtonStyle = styled.button`
-  height: 2rem;
-  width: 6rem;
-  font-size: 1rem;
+  height: 50px;
+  width: 200px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Gaegu';
   outline: none;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
-
   color: white;
-  background: #e67700;
+
+  background: white;
+  color: #495057;
+  border: 2px solid #495057;
   &:hover {
-    background: white;
-    color: #e67700;
-    border: 1px solid #e67700;
+    background: #495057;
+    color: white;
   }
-  margin-left: 24rem;
-  margin-top: 1.5rem;
 `;
 
 function Button({ Text, Pathes }) {

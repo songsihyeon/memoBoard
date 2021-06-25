@@ -2,21 +2,28 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Item = styled.div`
-  margin-bottom: 10px;
-  padding-right: 20px;
+  margin-left: 80px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff4e6;
-  width: 29.25rem;
-  height: 4rem;
-  border: 1px solid #e67700;
+  background: #e9ecef;
+  width: 800px;
+  height: 100px;
+  border: 1px solid #495057;
   border-radius: 10px;
   cursor: pointer;
-  color: #e67700;
+  color: #495057;
   font-weight: bold;
   font-size: 18px;
   font-family: 'Gaegu';
+  float: left;
+  &:nth-child(1) {
+    margin-top: 30px;
+  }
+  &:nth-child(2) {
+    margin-top: 30px;
+  }
 `;
 
 function BoxItem({ children }) {
