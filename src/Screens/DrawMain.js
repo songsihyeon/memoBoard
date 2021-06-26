@@ -27,7 +27,7 @@ function DrawMain() {
   return (
     <>
       <ContentBox>
-        <Header>
+        <Header isMain>
           <SearchBox placeholder="🔍 날짜를 검색하세요. ex) 6월 19일" />
         </Header>
         <BoxItemList />

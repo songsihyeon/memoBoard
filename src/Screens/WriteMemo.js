@@ -3,17 +3,13 @@ import ContentBox from './ContentBox';
 import Header from './Header';
 import Footer from './Footer';
 import Button from '../components/Button';
-import styled from 'styled-components';
-
-const TextBox = styled.textarea`
-  resize: none;
-`;
+import * as S from '../Style/TextBox';
 
 function WriteMemo() {
   return (
     <ContentBox>
       <Header />
-      <TextBox />
+      <S.TextBox />
 
       {/* <Footer>
         <Button Text="취소" Pathes="/" />

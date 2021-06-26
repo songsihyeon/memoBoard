@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const BoxHeader = styled.div`
@@ -18,7 +18,11 @@ const Title = styled.div`
   font-family: 'Gaegu';
   color: #495057;
   margin-top: 30px;
-  margin-left: 700px;
+  ${(props) =>
+    props.isMain &&
+    css`
+      margin-left: 700px;
+    `}
   display: inline;
 `;
 
@@ -32,11 +36,11 @@ const SubTitle = styled.div`
   display: inline;
 `;
 
-function Header({ children }) {
+function Header({ children, isMain }) {
   return (
     <BoxHeader>
       <Link to="/">
-        <Title>DD</Title>
+        <Title isMain={isMain}>DD</Title>
         <SubTitle>Daily Diary</SubTitle>
       </Link>
       {children}
