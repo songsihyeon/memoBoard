@@ -1,16 +1,16 @@
 import React from 'react';
 import ContentBox from './ContentBox';
 import Header from './Header';
+import TextBox from '../components/TextBox';
 import Footer from './Footer';
 import Button from '../components/Button';
-import * as S from '../Style/TextBox';
 
 function WriteMemo() {
   return (
     <ContentBox>
       <Header />
-      <S.TextBox />
-
+      <TextBox isTitle />
+      <TextBox />
       {/* <Footer>
         <Button Text="취소" Pathes="/" />
         <Button Text="등록" Pathes="/" />
