@@ -17,9 +17,13 @@ const ButtonStyle = styled.button`
   background: white;
   color: #495057;
   border: 2px solid #495057;
+
   &:hover {
     background: #495057;
     color: white;
+  }
+  &:not(:first-child) {
+    margin-left: 30px;
   }
 `;
 

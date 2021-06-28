@@ -44,7 +44,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Songsihyeon/note-app.git"
+    "url": "git+https://github.com/Songsihyeon/web-diary.git"
   },
   "keywords": [],
   "author": "",
