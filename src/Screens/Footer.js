@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const BoxFooter = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   position: absolute;
   left: 0;
   bottom: 0;

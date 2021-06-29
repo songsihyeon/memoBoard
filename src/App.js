@@ -3,14 +3,14 @@ import { Route } from 'react-router';
 import GlobalFonts from './font/font';
 import './index.css';
 import DrawMain from './Screens/DrawMain';
-import WriteMemo from './Screens/WriteMemo';
+import WriteDiary from './Screens/WriteDiary';
 
 function App() {
   return (
     <>
       <DrawMain />
       <GlobalFonts />
-      <Route path="/write" component={WriteMemo} />
+      <Route path="/write" component={WriteDiary} />
     </>
   );
 }

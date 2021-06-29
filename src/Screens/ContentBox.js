@@ -9,8 +9,6 @@ const BoxStyle = styled.div`
   width: 100%;
   height: 100%;
   background: #f8f9fa;
-  /* border-radius: 15%;
-  border: 2px solid #e67700; */
 `;
 
 function ContentBox({ children }) {

@@ -15,7 +15,7 @@ const Item = styled.div`
   cursor: pointer;
   color: #495057;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   font-family: 'Gaegu';
   float: left;
   &:nth-child(1) {
@@ -26,8 +26,8 @@ const Item = styled.div`
   }
 `;
 
-function BoxItem({ children }) {
-  return <Item>{children}</Item>;
+function DiaryItem({ diary }) {
+  return <Item>{diary.day}</Item>;
 }
 
-export default BoxItem;
+export default DiaryItem;

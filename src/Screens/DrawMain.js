@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import ContentBox from './ContentBox';
 import Header from './Header';
-import BoxItemList from '../components/BoxItemList';
+import DiaryItemList from '../components/Diary/DiaryItemList';
 import Footer from './Footer';
-import Button from '../components/Button';
+import ButtonWrite from '../components/Button/ButtonWrite';
 
 const SearchBox = styled.input`
   width: 30.5rem;
@@ -24,15 +24,56 @@ const SearchBox = styled.input`
 `;
 
 function DrawMain() {
+  const [text, setText] = useState({
+    day: '',
+    content: '',
+  });
+  const { day, content } = text;
+  const onChange = (e) => {
+    const { name, value } = e.target;
+    setText({
+      ...text,
+      [name]: value,
+    });
+  };
+
+  const diary = [
+    {
+      id: 1,
+      day: '3월 15일',
+      content: 'exexexexex',
+    },
+
+    {
+      id: 2,
+      day: '6월 29일',
+      content: 'exexexexex',
+    },
+    {
+      id: 3,
+      day: '7월 6일',
+      content: 'exexexexex',
+    },
+  ];
+
+  const nextId = useRef(4);
+  const onCreate = () => {
+    setText({
+      day: '',
+      content: '',
+    });
+    nextId.current += 1;
+  };
+
   return (
     <>
       <ContentBox>
         <Header isMain>
           <SearchBox placeholder="🔍 날짜를 검색하세요. ex) 6월 19일" />
         </Header>
-        <BoxItemList />
+        <DiaryItemList diary={diary} />
         <Footer>
-          <Button Text="생성" Pathes="/write" />
+          <ButtonWrite Text="생성" Pathes="/write" />
         </Footer>
       </ContentBox>
     </>
