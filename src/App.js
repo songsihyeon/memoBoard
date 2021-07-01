@@ -10,7 +10,7 @@ function App() {
     <>
       <DrawMain />
       <GlobalFonts />
-      <Route path="/write" component={WriteDiary} />
+      <Route path="/write" render={() => <WriteDiary />} />
     </>
   );
 }
