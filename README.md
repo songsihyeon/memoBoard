@@ -16,3 +16,11 @@
  - React.js
  - styled-components
 ```
+
+**화면**
+
+1. 메인 화면
+   ![메인](./README-image/1.png)
+
+2. 작성 화면
+   ![작성](./README-image/2.png)
