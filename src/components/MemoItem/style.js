@@ -21,7 +21,8 @@ export const ItemBox = styled.div`
   height: 280px;
   background-color: #dee2e6;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 25px;
   display: flex;
   flex-direction: column;

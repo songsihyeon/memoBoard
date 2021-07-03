@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, MemoItem } from '../../components/';
+import { Header, MemoItem, Footer } from '../../components/';
 import * as S from './style';
 
 const Main = () => {
@@ -18,6 +18,7 @@ const Main = () => {
         <MemoItem>test9</MemoItem>
         <MemoItem>test10</MemoItem>
       </S.Position>
+      <Footer />
     </>
   );
 };

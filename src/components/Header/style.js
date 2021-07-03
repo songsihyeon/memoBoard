@@ -8,6 +8,7 @@ export const BoxHeader = styled.div`
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #495057;
+  margin-bottom: 20px;
 `;
 
 export const Title = styled.div`
