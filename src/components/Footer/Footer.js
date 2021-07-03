@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as S from './style';
 
-const Footer = () => {
+const Footer = ({ Pathes, Text }) => {
   return (
     <S.Position>
-      <Link to="/create">
-        <S.WriteBtn>New Memo</S.WriteBtn>
+      <Link to={Pathes}>
+        <S.WriteBtn>{Text}</S.WriteBtn>
       </Link>
     </S.Position>
   );

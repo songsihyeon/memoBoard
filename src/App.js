@@ -9,7 +9,7 @@ function App() {
       <GlobalFonts />
       <BrowserRouter>
         <Route exact path="/" component={Main} />
-        <Route path="/create" component={CreateMemo} />
+        <Route path="/write" component={CreateMemo} />
       </BrowserRouter>
     </>
   );

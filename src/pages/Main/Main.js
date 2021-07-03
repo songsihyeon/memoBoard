@@ -3,22 +3,22 @@ import { Header, MemoItem, Footer } from '../../components/';
 import * as S from './style';
 
 const Main = () => {
+  const getMemo = () => {
+    const memoJSON = localStorage.getItem('Memo');
+    try {
+      return memoJSON ? JSON.parse(memoJSON) : [];
+    } catch (e) {
+      return [];
+    }
+  };
+
+  let Memo = getMemo();
+
   return (
     <>
       <Header />
-      <S.Position>
-        <MemoItem>test1</MemoItem>
-        <MemoItem>test2</MemoItem>
-        <MemoItem>test3</MemoItem>
-        <MemoItem>test4</MemoItem>
-        <MemoItem>test5</MemoItem>
-        <MemoItem>test6</MemoItem>
-        <MemoItem>test7</MemoItem>
-        <MemoItem>test8</MemoItem>
-        <MemoItem>test9</MemoItem>
-        <MemoItem>test10</MemoItem>
-      </S.Position>
-      <Footer />
+      <S.Position></S.Position>
+      <Footer Pathes="/write" Text="New Memo" />
     </>
   );
 };

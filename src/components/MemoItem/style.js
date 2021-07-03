@@ -27,6 +27,7 @@ export const ItemBox = styled.div`
   display: flex;
   flex-direction: column;
   overflow: scroll;
+  color: #343a40;
   &::-webkit-scrollbar {
     display: none;
   }

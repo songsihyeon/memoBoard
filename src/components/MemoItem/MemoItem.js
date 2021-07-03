@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom';
 import * as S from './style';
 import { MdDelete } from 'react-icons/md';
 
-const MemoItem = ({ children }) => {
+const MemoItem = ({ memo, Notes }) => {
+  const DeleteHandler = () => {
+    console.log;
+  };
+
   return (
     <S.ItemBox>
-      <S.Title>{children}</S.Title>
-      <S.Content>{children}</S.Content>
+      <S.Title></S.Title>
+      <S.Content></S.Content>
       <S.DeleteBtn>
         <MdDelete />
       </S.DeleteBtn>
