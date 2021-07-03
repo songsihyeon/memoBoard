@@ -1,14 +1,16 @@
 import React from 'react';
-// import { Route } from 'react-router';
+import { Route, BrowserRouter } from 'react-router-dom';
+import { CreateMemo, Main } from './pages';
 import GlobalFonts from './font/font';
-import './index.css';
-import DrawMain from './Screens/DrawMain';
 
 function App() {
   return (
     <>
       <GlobalFonts />
-      <DrawMain />
+      <BrowserRouter>
+        <Route exact path="/" component={Main} />
+        <Route path="/create" component={CreateMemo} />
+      </BrowserRouter>
     </>
   );
 }
