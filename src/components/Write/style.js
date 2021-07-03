@@ -9,7 +9,8 @@ export const TitleBox = styled.input`
   border: 2px solid #343a40;
   outline: none;
   color: #343a40;
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: bold;
   font-family: 'Gaegu';
   text-align: center;
   resize: none;
@@ -39,7 +40,7 @@ export const BtnPosition = styled.div`
 
 export const DefaultBtn = styled.div`
   cursor: pointer;
-  width: 140px;
+  width: 160px;
   height: 50px;
   background-color: #868e96;
   color: #fff;
@@ -56,7 +57,7 @@ export const DefaultBtn = styled.div`
 
 export const RedBtn = styled.div`
   cursor: pointer;
-  width: 140px;
+  width: 160px;
   height: 50px;
   background-color: #adb5bd;
   color: #fff;

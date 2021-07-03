@@ -12,12 +12,18 @@ const Main = () => {
     }
   };
 
-  let Memo = getMemo();
+  let Memos = getMemo();
 
   return (
     <>
       <Header />
-      <S.Position></S.Position>
+      <S.Position>
+        {React.Children.toArray(
+          Memos.map((data) => {
+            return <MemoItem memo={data} Memos={Memos} />;
+          }),
+        )}
+      </S.Position>
       <Footer Pathes="/write" Text="New Memo" />
     </>
   );
